@@ -4,7 +4,7 @@ let quizData = require('./quiz_data.json')
 
 class Quiz extends React.Component {
     render() {
-        return <Quiz><div className="QuizQuestion">QuizData.quiz_questions.instruction_text</div></Quiz>;
+        return <Quiz><Quiz className="QuizQuestion">QuizData.quiz_questions.instruction_text</Quiz></Quiz>;
     }
     constructor(props) {
         super();
