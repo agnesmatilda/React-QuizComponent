@@ -9,7 +9,7 @@ class QuizQuestion extends Component {
         </section>
         <section className="buttons">
                 <ul>
-            //quiz question button logic goes here
+                        <li>this.props.quiz_questions</li>
           </ul>
         </section>
       </main>)
