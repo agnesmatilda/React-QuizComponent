@@ -5,12 +5,14 @@ class QuizQuestion extends Component {
 
     }
     render() {
-        return(<main>
+        return (
+            <main>
         <section>
           <p>// instruction text goes here</p>
         </section>
         <section className="buttons">
-          <ul>
+                <ul>
+                    <li></li>
             //quiz question button logic goes here
           </ul>
         </section>
