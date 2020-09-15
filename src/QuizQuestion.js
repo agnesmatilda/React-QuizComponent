@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 
 class QuizQuestion extends Component {
-    constructor() {
-
-    }
     render() {
         return (
             <main>
@@ -12,7 +9,6 @@ class QuizQuestion extends Component {
         </section>
         <section className="buttons">
                 <ul>
-                    <li></li>
             //quiz question button logic goes here
           </ul>
         </section>
