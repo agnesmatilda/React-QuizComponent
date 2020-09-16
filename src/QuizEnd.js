@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 class QuizEnd extends Component {
+    handleResetClick() {
+        this.props.resetClickHandler()
+    }
     render() {
-        handleResetClick() {
-            this.props.resetClickHandler()
-        }
         return (
             <div>
                 <p>Thanks for playing!</p>
