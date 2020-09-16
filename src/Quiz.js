@@ -13,7 +13,10 @@ class Quiz extends Component {
         this.setState((state) => {
             return { quiz_position: state.quiz_position + 1 }
         })
-    } 
+    }
+    handleResetClick() {
+        this.props.resetClickHandler()
+    }
     render() {
         const isQuizEnd = ((this.state.quiz_position - 1) === quizData.quiz_questions.length)
         return (
