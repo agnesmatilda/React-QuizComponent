@@ -7,8 +7,7 @@ class QuizQuestionButton extends Component {
         )
     }
     handleClick() {
-        this.props.clickHandler()
-        return this.props.button_text
+        this.props.clickHandler(this.props.button_text) 
     }
 }
 export default QuizQuestionButton
