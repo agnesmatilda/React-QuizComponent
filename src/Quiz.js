@@ -17,7 +17,9 @@ class Quiz extends Component {
             </div>
         )
     }
-    showNextQuestion() { }
+    showNextQuestion() {
+        this.setState(this.state.quiz_position)
+    }
 }
 
 export default Quiz
