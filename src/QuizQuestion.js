@@ -17,7 +17,8 @@ class QuizQuestion extends Component {
                     <ul>
                         {this.props.quiz_question.answer_options.map((answer_options, index) => <QuizQuestionButton key={index} button_text={answer_options} clickHandler={this.handleClick.bind(this)}/>)}      
                 </ul>
-        </section>
+                </section>
+                this.state.incorrectAnswer = ({ true}) => (  <p> className='error'>'Sorry, that's not right'</p>:null});
       </main>)
     }
     handleClick(buttonText) {
