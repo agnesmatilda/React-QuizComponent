@@ -23,10 +23,15 @@ class QuizQuestion extends Component {
     handleClick(buttonText) {
         if (this.props.quiz_question.answer === buttonText) {
             this.props.showNextQuestionHandler()
+            this.setState(
+                { incorrectAnswer: false}
+            )
         }
-        this.setState(
-            this.state = true > false ? 'false' : 'true'
-        )
+        else {
+            this.setState(
+                { incorrectAnswer: true }
+            )
+        }
     }
 }
 export default QuizQuestion
