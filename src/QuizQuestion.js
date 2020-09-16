@@ -3,6 +3,7 @@ import QuizQuestionButton from './QuizQuestionButton.js'
 
 class QuizQuestion extends Component {
     render() {
+        let index;
         return (
             <main>
         <section>
@@ -10,7 +11,7 @@ class QuizQuestion extends Component {
         </section>
         <section className="buttons">
                     <ul>
-                        {this.props.quiz_question.answer_options[0].map((t, k) => <QuizQuestionButton button_text={this.props.quiz_question.answer_options[0]} />)}      
+                        {this.props.quiz_question.answer_options[index].map((t, k) => <QuizQuestionButton button_text={this.props.quiz_question.answer_options[index]} />)}      
                 </ul>
         </section>
       </main>)
