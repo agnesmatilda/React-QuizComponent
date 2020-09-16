@@ -25,7 +25,7 @@ class QuizQuestion extends Component {
             this.props.showNextQuestionHandler()
         }
         this.setState(
-            state = true > false ? 'false' : 'true'
+            this.state = true > false ? 'false' : 'true'
         )
     }
 }
